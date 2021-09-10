@@ -1,0 +1,80 @@
+.submit{
+    background: url('../img/bcg-submit.jpg') no-repeat;
+    background-size: cover;
+    margin-top: 81px;
+    height: 373px;
+    width: 100%;
+    box-shadow: $shadow;
+
+    &__title{
+        @include text-style($color:white, $font-size:44px, $font-weight:700);
+        justify-content: center;
+        display: flex;
+        width: 307px;
+        line-height: 80px;
+        border-bottom: white 1px solid;
+        margin: 12px auto 73px;
+        @media (max-width: 980px) {
+            margin-bottom: 30px;
+    }
+        
+    }
+
+    &__form{
+        width: 900px;
+        margin: 0 auto;
+        @media (max-width: 980px) {
+            width: 70%;
+    }
+        
+    }
+
+    &__items-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 980px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+        
+    }
+
+    &__items{
+        @include text-style ($color:black, $font-size: 20px);
+        width: 200px;
+        height: 34px;
+        &::placeholder{
+            padding-left: 5px;
+            padding-bottom: 2px ;
+            @include text-style($font-size: 16px);
+        }
+        @media (max-width: 980px) {
+            margin-top: 10px;
+    }
+    }
+    &__button-wrapper{
+        display: flex;
+        justify-content: center;
+        input{
+            @include text-style ($color: black, $font-size:36px);
+            height: 63px;
+            width: 300px;
+            border: none;
+            border-radius: 15px;
+            margin: 58px auto 0;
+            &:hover{
+                background-color: $hover;
+                color: white;
+            }
+            @media (max-width: 980px) {
+                margin: 20px;
+                width: 200px;
+                height: 53px;
+        }
+        }
+    }
+    
+
+}

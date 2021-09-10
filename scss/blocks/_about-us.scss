@@ -1,0 +1,86 @@
+.about-us{
+    
+
+    &__wrapper{
+        min-height: 664px;
+        background-color: #FFFEFE;
+        box-shadow: $shadow; 
+        @media (max-width: 552px) {
+            min-height: auto;
+            padding-bottom: 30px;
+           }
+               
+    }
+
+    &__title{
+        @include text-style($color: black, $font-size: 96px, $font-weight: 700);
+        padding-top: 108px;
+        text-align: center;
+        line-height:100px;
+        @media (max-width: 1120px) {
+            @include text-style($color: black, $font-size: 96px, $font-weight: 700);
+            padding-top: 60px;
+            
+        }
+        @media (max-width: 552px) {
+            @include text-style($color: black, $font-size: 66px, $font-weight: 700);
+           }
+
+    }
+
+    &__subtitle{
+        @include text-style($color: black, $font-size: 28px);
+        line-height:39px;
+        text-align: center;
+        margin: 37px auto;
+        width: 75%;
+        @media (max-width: 1120px) {
+            @include text-style($color: black, $font-size: 18px);
+            
+        }
+        @media (max-width: 552px) {
+            @include text-style($color: black, $font-size: 12px);
+            line-height: 20px;
+        }
+    }
+    &__subtitle-mini{
+        @include text-style($color: black, $font-size: 28px);
+        line-height:39px;
+        text-align: center;
+        margin: 0 auto;
+        width: 75%;
+        @media (max-width: 1120px) {
+            @include text-style($color: black, $font-size: 18px);
+            
+    }
+        @media (max-width: 552px) {
+             @include text-style($color: black, $font-size: 12px);
+            line-height: 20px;
+            }
+    }
+
+    &__button{
+        margin-top: 50px ;
+        float: right;
+        background: none;
+        border: none;
+        &-hover{
+            fill: #C4C4C4;
+            &:hover{
+                fill: $hover; 
+            }
+        }
+        &:active{
+            opacity: .3;       
+        }
+        &:hover{
+            cursor: pointer;
+            } 
+
+            @media (max-width: 552px) {
+                display: none;
+                
+        }
+    }
+    
+}

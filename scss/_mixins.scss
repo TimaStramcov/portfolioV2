@@ -1,0 +1,8 @@
+@mixin text-style($font-family: 'Roboto Condensed', $font-weight: 300, $font-size: 18px, $color:#E5E5E5, $text-transform: uppercase, $font-style: normal){
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color:$color;
+    text-transform: $text-transform;
+    font-style: $font-style;
+}

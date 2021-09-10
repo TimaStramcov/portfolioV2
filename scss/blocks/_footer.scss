@@ -1,0 +1,45 @@
+.footer{
+    margin-top: 152px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    &__contacts{
+        display: flex;
+        width: 454px;
+        height: 190px;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 15%;
+        @media (max-width: 850px) {
+            width: 260px;
+            height: 140px;
+    }
+
+        img{
+            margin: 49px;
+            width: 92px;
+            height: 92px;
+            @media (max-width: 850px) {
+            margin: 29px;
+            width: 72px;
+            height: 72px;
+        }
+        }
+        
+        h2{
+            @include text-style($font-size:24px);
+            line-height:33px;
+            @media (max-width: 850px) {
+                @include text-style($font-size:14px);
+                line-height:23px;
+            }
+        }
+    }
+    &__contacts-item{
+        margin-top: 65px;
+        @media (max-width: 850px) {
+            margin-top: 35px;
+        }
+    }
+}
